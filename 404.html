@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена — Petitpas School</title>
+  <meta name="description" content="Ошибка 404: такой страницы нет.">
+  <link rel="canonical" href="/404.html">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Страница не найдена — Petitpas School">
+  <meta property="og:description" content="Ошибка 404: такой страницы нет.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Пропустить к содержимому</a>
+<header class="topbar" role="banner">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="Petitpas логотип" class="logo">Petitpas<span class="muted"> School</span></a>
+    <input type="checkbox" id="nav-toggle" aria-label="Открыть меню">
+    <label for="nav-toggle" class="burger" aria-label="Меню">☰</label>
+    <nav class="nav" role="navigation" aria-label="Главное меню">
+      <a href="/">Главная</a>
+      <a href="/courses.html">Курсы</a>
+      <a href="/free.html">Бесплатно</a>
+      <a href="/blog/">Блог</a>
+      <a href="/about.html">Обо мне</a>
+      <a href="/contact.html">Контакты</a>
+      <a class="cta" href="/#signup">Записаться</a>
+    </nav>
+  </div>
+</header>
+<main id="content">
+
+<section class="wrap">
+  <h1>404 — страницы нет</h1>
+  <p>Похоже, ссылка устарела. Попробуйте начать с <a href="/">главной</a>.</p>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <h4>Petitpas School</h4>
+      <p>Французский маленькими шагами: A0→B2. Бесплатные материалы и структурные курсы.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="/courses.html">Курсы</a></li>
+        <li><a href="/free.html">Бесплатно</a></li>
+        <li><a href="/blog/">Блог</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <p>Email: hello@petitpas.example<br>Telegram: @petitpas_school</p>
+    </div>
+  </div>
+  <p class="copy">© 2025 Petitpas • Все права защищены</p>
+</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){{
+  a.addEventListener('click', function(e){{
+    var id=a.getAttribute('href').slice(1);
+    var el=document.getElementById(id);
+    if(el){{e.preventDefault();el.scrollIntoView({{behavior:"smooth"}});}}
+  }});
+}});
+document.querySelectorAll('.nav a').forEach(function(link){{
+  link.addEventListener('click',function(){{var t=document.getElementById('nav-toggle'); if(t) t.checked=false;}})
+}});
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Курсы — Petitpas School</title>
+  <meta name="description" content="Курсы Petitpas: A0→A1, A2→B1, интенсив B1→B2. Структура, аудио, PDF, тесты.">
+  <link rel="canonical" href="/courses.html">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Курсы — Petitpas School">
+  <meta property="og:description" content="Курсы Petitpas: A0→A1, A2→B1, интенсив B1→B2. Структура, аудио, PDF, тесты.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Пропустить к содержимому</a>
+<header class="topbar" role="banner">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="Petitpas логотип" class="logo">Petitpas<span class="muted"> School</span></a>
+    <input type="checkbox" id="nav-toggle" aria-label="Открыть меню">
+    <label for="nav-toggle" class="burger" aria-label="Меню">☰</label>
+    <nav class="nav" role="navigation" aria-label="Главное меню">
+      <a href="/">Главная</a>
+      <a href="/courses.html">Курсы</a>
+      <a href="/free.html">Бесплатно</a>
+      <a href="/blog/">Блог</a>
+      <a href="/about.html">Обо мне</a>
+      <a href="/contact.html">Контакты</a>
+      <a class="cta" href="/#signup">Записаться</a>
+    </nav>
+  </div>
+</header>
+<main id="content">
+
+<section class="wrap">
+  <h1>Курсы Petitpas</h1>
+  <div class="pricing">
+    <div class="p-card">
+      <h3>A0→A1 «С нуля»</h3>
+      <p>50 уроков • Фонетика, базовые конструкции, частотные темы.</p>
+      <ul><li>Видео/аудио + PDF</li><li>Домашка 10–15 мин</li><li>Ревизии каждые 5 уроков</li></ul>
+      <a class="btn wide" href="https://gum.co/your-a0-a1" rel="noopener">Купить на Gumroad</a>
+    </div>
+    <div class="p-card">
+      <h3>A2→B1 «Система»</h3>
+      <p>36 уроков • Устойчивость речи и понимание носителей.</p>
+      <ul><li>Тренажёры</li><li>Диалоги и отыгрыши</li><li>Мини‑итоги</li></ul>
+      <a class="btn wide" href="https://gum.co/your-a2-b1" rel="noopener">Купить на Gumroad</a>
+    </div>
+    <div class="p-card">
+      <h3>Интенсив B1→B2</h3>
+      <p>8 недель • Глубокая грамматика и разговорная практика.</p>
+      <ul><li>Разговорные сессии</li><li>Академическая лексика</li><li>DELF‑фокус</li></ul>
+      <a class="btn wide" href="https://gum.co/your-b1-b2" rel="noopener">Купить на Gumroad</a>
+    </div>
+  </div>
+  <p class="note">Нет Gumroad? Можно заменить ссылки на Boosty/PayPal/другие.</p>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <h4>Petitpas School</h4>
+      <p>Французский маленькими шагами: A0→B2. Бесплатные материалы и структурные курсы.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="/courses.html">Курсы</a></li>
+        <li><a href="/free.html">Бесплатно</a></li>
+        <li><a href="/blog/">Блог</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <p>Email: hello@petitpas.example<br>Telegram: @petitpas_school</p>
+    </div>
+  </div>
+  <p class="copy">© 2025 Petitpas • Все права защищены</p>
+</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){{
+  a.addEventListener('click', function(e){{
+    var id=a.getAttribute('href').slice(1);
+    var el=document.getElementById(id);
+    if(el){{e.preventDefault();el.scrollIntoView({{behavior:"smooth"}});}}
+  }});
+}});
+document.querySelectorAll('.nav a').forEach(function(link){{
+  link.addEventListener('click',function(){{var t=document.getElementById('nav-toggle'); if(t) t.checked=false;}})
+}});
+</script>
+</body>
+</html>

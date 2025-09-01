@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Французский онлайн — Petitpas School</title>
+  <meta name="description" content="Petitpas School — бесплатные материалы по французскому, структурные курсы A0→B2, PDF и аудио.">
+  <link rel="canonical" href="/">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Французский онлайн — Petitpas School">
+  <meta property="og:description" content="Petitpas School — бесплатные материалы по французскому, структурные курсы A0→B2, PDF и аудио.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og.png">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Пропустить к содержимому</a>
+<header class="topbar" role="banner">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="Petitpas логотип" class="logo">Petitpas<span class="muted"> School</span></a>
+    <input type="checkbox" id="nav-toggle" aria-label="Открыть меню">
+    <label for="nav-toggle" class="burger" aria-label="Меню">☰</label>
+    <nav class="nav" role="navigation" aria-label="Главное меню">
+      <a href="/">Главная</a>
+      <a href="/courses.html">Курсы</a>
+      <a href="/free.html">Бесплатно</a>
+      <a href="/blog/">Блог</a>
+      <a href="/about.html">Обо мне</a>
+      <a href="/contact.html">Контакты</a>
+      <a class="cta" href="/#signup">Записаться</a>
+    </nav>
+  </div>
+</header>
+<main id="content">
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <h1>Petitpas: французский <em>маленькими шагами</em></h1>
+    <p>Бесплатные уроки и структурные курсы A0→B2. Без перегруза, с реальными результатами.</p>
+    <div class="hero-actions">
+      <a class="btn" href="/courses.html">Посмотреть курсы</a>
+      <a class="btn ghost" href="/free.html">Бесплатные материалы</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap grid3">
+  <div class="card">
+    <h3>Старт A0→A1</h3>
+    <p>Звук, чтение, базовые конструкции и частотные фразы. Первые диалоги — с 1-го дня.</p>
+  </div>
+  <div class="card">
+    <h3>Система A2→B1</h3>
+    <p>Глубже в грамматику и лексику. Осознанная речь и понимание носителей.</p>
+  </div>
+  <div class="card">
+    <h3>Интенсив B1→B2</h3>
+    <p>Ускоренный прогресс, академическая лексика, подготовка к DELF.</p>
+  </div>
+</section>
+
+<section class="wrap split">
+  <div>
+    <h2>Почему Petitpas?</h2>
+    <ul class="ticks">
+      <li>Методика «малых шагов» — каждая сессия даёт маленькую победу.</li>
+      <li>Чёткий план на 4–6 недель и «ревизии» без перегруза.</li>
+      <li>Материалы для взрослых и детей 7–10: карточки, аудио, мини-игры.</li>
+    </ul>
+  </div>
+  <div class="panel">
+    <h3>Mini‑урок: Salut !</h3>
+    <p><strong>Je m’appelle</strong> Anna. <strong>Enchanté(e) !</strong> Comment tu t’appelles ?</p>
+    <p><small>Скачай PDF «15 фраз для старта» и тренируй произношение.</small></p>
+    <a class="btn small" href="/free.html#starter-pdf">Скачать PDF</a>
+  </div>
+</section>
+
+<section id="signup" class="cta">
+  <div class="wrap">
+    <h2>Пробный доступ к курсу A0→A1</h2>
+    <p>3 урока бесплатно на email. Без спама.</p>
+    <form class="form" action="https://docs.google.com/forms/d/e/FORM_ID/formResponse" method="POST">
+      <label>Имя*<input required type="text" name="entry.111111" placeholder="Как к тебе обращаться?"></label>
+      <label>Email*<input required type="email" name="entry.222222" placeholder="name@example.com"></label>
+      <button type="submit" class="btn">Получить доступ</button>
+      <p class="form-note">Можно заменить Google Form на Formspree / MailerLite.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <h4>Petitpas School</h4>
+      <p>Французский маленькими шагами: A0→B2. Бесплатные материалы и структурные курсы.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="/courses.html">Курсы</a></li>
+        <li><a href="/free.html">Бесплатно</a></li>
+        <li><a href="/blog/">Блог</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <p>Email: hello@petitpas.example<br>Telegram: @petitpas_school</p>
+    </div>
+  </div>
+  <p class="copy">© 2025 Petitpas • Все права защищены</p>
+</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){{
+  a.addEventListener('click', function(e){{
+    var id=a.getAttribute('href').slice(1);
+    var el=document.getElementById(id);
+    if(el){{e.preventDefault();el.scrollIntoView({{behavior:"smooth"}});}}
+  }});
+}});
+document.querySelectorAll('.nav a').forEach(function(link){{
+  link.addEventListener('click',function(){{var t=document.getElementById('nav-toggle'); if(t) t.checked=false;}})
+}});
+</script>
+</body>
+</html>
