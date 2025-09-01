@@ -11,4 +11,4 @@
 ## Замены
 - В `/courses.html` замените ссылки `https://gum.co/your-...` на реальные страницы продуктов.
 - В формах замените `FORM_ID` (Google Forms) или `formspree.io/f/your-id`.
-- Положите свои PDF в `/assets/free/` и обновите ссылки на `/free.html`.
+- Положите PDF в `/assets/free/` и обновите ссылки на `/free.html`.
